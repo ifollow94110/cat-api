@@ -22,3 +22,15 @@ export function getCatPic() {
         })
     })
 }
+export function getCatFact() {
+    return new Promise((resolve, reject) => {
+        fetch("https://catfact.ninja/fact").then(response => {
+            response.json().then(response => {
+                resolve(response.fact)
+            })
+        }).catch(err => {
+            console.log(err)
+            reject(err)
+        })
+    })
+}

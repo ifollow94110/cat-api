@@ -1,5 +1,5 @@
 <template>
-  <v-img v-if="picUrl" :src="picUrl" max-height="250"></v-img>
+  <v-img v-if="picUrl" :src="picUrl" height="250"></v-img>
 </template>
 
 <script>

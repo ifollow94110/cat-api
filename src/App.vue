@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="primary" dark class="justify-center">
       <div class="d-flex align-center">
         <v-img
           alt="Cats Logo"
@@ -10,7 +10,7 @@
           transition="scale-transition"
           width="40"
         />
-        Cats-API
+        <h2>Cats-API</h2>
       </div>
     </v-app-bar>
 
