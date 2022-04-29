@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark class="justify-center">
+    <v-app-bar app color="primary" dark class="centered-content">
       <div class="d-flex align-center">
         <v-img
           alt="Cats Logo"
@@ -35,3 +35,8 @@ export default {
   }),
 };
 </script>
+<style scoped>
+.centered-content >>> .v-toolbar__content {
+  justify-content: center;
+}
+</style>

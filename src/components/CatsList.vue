@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row class="text-center">
+    <v-row>
       <template v-if="catsList.length">
         <v-col v-for="(cat, i) in catsList" :key="i" md="4" sm="6" cols="12">
           <v-tooltip max-width="250" bottom>

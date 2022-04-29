@@ -1,5 +1,11 @@
 <template>
-  <v-img v-if="picUrl" :src="picUrl" height="250"></v-img>
+  <v-img v-if="picUrl" :src="picUrl" height="250">
+    <template v-slot:placeholder>
+      <v-row class="fill-height ma-0" align="center" justify="center">
+        <v-progress-circular indeterminate color="blue"></v-progress-circular>
+      </v-row>
+    </template>
+  </v-img>
 </template>
 
 <script>
